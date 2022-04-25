@@ -1,4 +1,4 @@
-class PunnetSquare{
+class PunnettSquare{
     constructor(genotypes){
         this.genotypes = genotypes;
         this.pairCount = genotypes[0].length / 2;
