@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <style>
+            td{
+                border: 1px solid black;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <span>Parent Genotype 1:</span>
+        <input id="parent1">
+        <br>
+        <span>Parent Genotype 2:</span>
+        <input id="parent2">
+        <br>
+        <button id="button">Generate</button>
+        <div id="table">
+
+        </div>
+        <script src="lib/punnet.js"></script>
+        <script>
+            document.getElementById('button').addEventListener('click', ()=>{
+                var square = new PunnetSquare([document.getElementById('parent1').value, document.getElementById('parent2').value,]);
+                square.generateTable(table=>{
+                    document.getElementById('table').innerHTML = '';
+                    document.getElementById('table').appendChild(table);
+                })
+            });
+        </script>
+    </body>
+</html>
