@@ -16,7 +16,7 @@ class PunnettSquare{
         var output = [];
         for(let i=0;i<2;i++){
             for(let j=0;j<2;j++){
-                output.push((this.genotypes[0].substring(pair*2, (pair*2)+2)[j]+this.genotypes[1].substring(pair*2, (pair*2)+2)[i]));
+                output.push((this.genotypes[0].substring(pair*2, (pair*2)+2)[j]+this.genotypes[1].substring(pair*2, (pair*2)+2)[i]).split('').sort().join(''));
             }
         }
         return output;
