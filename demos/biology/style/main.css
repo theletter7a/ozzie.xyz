@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 50vw 25vw 25vw;
+    grid-template-rows: 50vh 50vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#structures{
+    grid-column: 1;
+}
+
+#molecules{
+    grid-column: 2;
+}
+
+#ecosystems{
+    grid-column: 3;
+}
+
+#genetics{
+    grid-column: 1 / 4;
+}
+
+.main-section{
+    border: 1px solid black;
+    position: relative;
+    cursor: pointer;
+}
+
+.section-header{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

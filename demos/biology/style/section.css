@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw 25vw;
+    grid-template-rows: 50vh 50vh;
+    font-family: Helvetica;
+}
+
+.sub-section{
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.sub-section>img{
+    height: 45vh;
+    max-width: 25vw;
+}
+
+img:hover{
+    border: 1px solid black;
+}
+
+p{
+    margin: 0;
+}
+
