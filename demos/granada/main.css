@@ -1,0 +1,34 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#container{
+    display: inline-block;
+    text-align: left;
+    width: 50vw;
+}
+
+#map{
+    width: inherit;
+    box-sizing: border-box;
+}
+
+#rocker{
+    width: inherit;
+    border: 4px solid black;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 10vw 30vw 10vw;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+#rocker>div{
+    text-align: center;
+}
+
+#rocker>div>img{
+    height: 70px;
+    padding: 12px;
+}
